@@ -58,7 +58,7 @@ class _NewTransactionState extends State<NewTransaction> {
             keyboardType: TextInputType.number,
             onSubmitted: (_) => _submitData(),
           ),
-          Container(height: 20),
+          SizedBox(height: 20),
           RaisedButton(
             child: Text('Add Pokemon'),
             textColor: Colors.white,

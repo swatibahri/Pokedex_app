@@ -31,89 +31,42 @@ class _SideMenuState extends State<SideMenu> {
           ListTile(
             leading: Icon(PokeballIcon.pokeball_icon),
             title: Text('Bulbasaur'),
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => ,
-              // );
-            },
+            onTap: () {},
           ),
           ListTile(
             leading: Icon(PokeballIcon.pokeball_icon),
             title: Text('Ivysaur'),
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //       builder: (context) => PokedexPage(pokedexId: 2)),
-              // );
-            },
+            onTap: () {},
           ),
           ListTile(
             leading: Icon(PokeballIcon.pokeball_icon),
             title: Text('Venusaur'),
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //       builder: (context) => PokedexPage(pokedexId: 3)),
-              // );
-            },
+            onTap: () {},
           ),
           ListTile(
             leading: Icon(PokeballIcon.pokeball_icon),
             title: Text('Charmander'),
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //       builder: (context) => PokedexPage(pokedexId: 4)),
-              // );
-            },
+            onTap: () {},
           ),
           ListTile(
             leading: Icon(PokeballIcon.pokeball_icon),
             title: Text('Charmeleon'),
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //       builder: (context) => PokedexPage(pokedexId: 5)),
-              // );
-            },
+            onTap: () {},
           ),
           ListTile(
             leading: Icon(PokeballIcon.pokeball_icon),
             title: Text('Charizard'),
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //       builder: (context) => PokedexPage(pokedexId: 6)),
-              // );
-            },
+            onTap: () {},
           ),
           ListTile(
             leading: Icon(PokeballIcon.pokeball_icon),
             title: Text('Squirtle'),
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //       builder: (context) => PokedexPage(pokedexId: 7)),
-              // );
-            },
+            onTap: () {},
           ),
           ListTile(
             leading: Icon(PokeballIcon.pokeball_icon),
             title: Text('Wartortle'),
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //       builder: (context) => PokedexPage(pokedexId: 8)),
-              // );
-            },
+            onTap: () {},
           )
         ],
       ),

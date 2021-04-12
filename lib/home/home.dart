@@ -17,7 +17,6 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   final List<Pokemon> _userTransactions = [];
   KtList<Pokemon> _pokemonList = emptyList();
-  //KtList<PokeDetail> _pokemonDetail = emptyList();
   bool _isLoading = false;
   final ScrollController _scrollController =
       ScrollController(debugLabel: 'pokemonSc');
@@ -26,12 +25,10 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     _fetchPokemonList();
-    //  _fetchPokemonDetail();
 
     _scrollController.addListener(() {
       if (!_isLoading && _scrollController.position.extentAfter == 0.0) {
         _fetchPokemonList();
-        //  _fetchPokemonDetail();
       }
     });
   }
@@ -47,16 +44,6 @@ class _HomeState extends State<Home> {
     });
   }
 
-  // _fetchPokemonDetail() async {
-  //   setState(() {
-  //     _isLoading = true;
-  //   });
-  //   final pokemonDetail = await pokeApi.getPokemonDetail(_pokemonDetail.size);
-  //   setState(() {
-  //     _pokemonDetail = _pokemonDetail.plus(pokemonDetail);
-  //     _isLoading = false;
-  //   });
-  // }
   void _addNewTransaction(
     String name,
     String url,
@@ -113,13 +100,8 @@ class _HomeState extends State<Home> {
                 SliverGrid(
                   gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                     maxCrossAxisExtent: 300.0,
-                    // mainAxisSpacing: 10.0,
-                    // crossAxisSpacing: 10.0,
                     childAspectRatio: 1.0,
                   ),
-
-                  // gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  //     crossAxisCount: 2),
                   delegate: SliverChildBuilderDelegate((ctx, index) {
                     var item = _pokemonList[index];
 
@@ -129,7 +111,6 @@ class _HomeState extends State<Home> {
                         name: item.name,
                         color: item.color,
                         key: ValueKey(item.id),
-                        // name: item.name,
                         onTap: () {
                           Navigator.pushNamed(context, '/detail', arguments: {
                             'id': item.id,
